@@ -12,6 +12,8 @@ a {
     text-decoration: none; /* Quita el subrayado de los enlaces */
 }
 
+/* Nav padding right */
+
 ul.horizontal-list-right {
     list-style-type: none; /* Quitar los puntos de la lista */
     padding: 0;
@@ -23,6 +25,8 @@ ul.horizontal-list-right li {
     display: inline; /* Hace que los elementos de la lista estén en línea */
     margin-right: 10px; /* Espacio entre los elementos de la lista */
 }
+
+/* Nav padding left */
 
 ul.horizontal-list-left {
     list-style-type: none; /* Quitar los puntos de la lista */
@@ -36,6 +40,8 @@ ul.horizontal-list-left li {
     margin-right: 10px; /* Espacio entre los elementos de la lista */
 }
 
+/* Promotion area */
+
 ul.promotion {
     text-align: center;
 }
@@ -43,4 +49,16 @@ ul.promotion {
 ul.promotion li {
     display: inline;
     padding: 10px;
+}
+
+/* Footer */
+
+footer {
+    color: white;
+    background-color: rgb(55, 65, 81);
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+}
+
+div.footer li{
+    display: inline;
 }
