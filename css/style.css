@@ -1,79 +1,238 @@
-nav {
-    color: white;
-    background-color: rgb(55, 65, 81);
-    text-decoration: none; /* Quita el subrayado de los enlaces, NO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Promotion area */
+header {
+    background-color: #374151;
+}
 
-ul.promotion {
+.nav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.navRight {
+    display:flex;
+    flex-direction: row;
+}
+
+.navRight a{
+    color: white;
+}
+
+.navRight ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: right;
+    align-items: center;
+    padding:  40px 40px;
+}
+
+.navLeft {
+    display: flex;
+    flex-direction: row;
+}
+
+.navLeft a {
+    color: white;
+}
+
+.navLeft ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: left;
+    align-items: center;
+    padding:  40px 40px;
+}
+
+/*PROMOTION*/
+
+.promotion {
+    background-color: lightblue;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.promotion ul {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.cardsAboutMe {
+    padding: 40px;
+    background-color: #D1D5DB;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+}
+
+.cardAboutMe01 {
+    padding-top: 50px;
+/*     padding-bottom: 50px; */
+    width: 400px;
+    background-color: #F3F4F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 28px;;
+}
+
+.imgMe {
+    border-radius: 500px;
+}
+
+.cardAboutMe01 div {
     text-align: center;
 }
 
-ul.promotion li {
-    display: inline;
-    padding: 10px;
+
+
+.cardAboutMe01Icons {
+    padding: 20px;
+    background-color: #495955;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
 }
 
-a:visited, a:active {
-    color: inherit; /* Este estilo hereda el color del padre, que es blanco en este caso */
+.cardAboutMe02 {
+    width: 400px;
+    padding: 8px;
+    background-color: lightcyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 20px;
+    border-color: #9CA3AF;
+    border-radius: 28px;
+}
+.cardAboutMe02 div {
+    display:flex;
+    flex-direction: row;
+    gap: 40px;
 }
 
-a {
-    text-decoration: none; /* Quita el subrayado de los enlaces */
+.cloudPortfolio {
+    background-color: lightpink;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
 }
-
-/* Nav padding right */
-
-ul.horizontal-list-right {
-    list-style-type: none; /* Quitar los puntos de la lista */
-    padding: 0;
-    margin: 0;
-    text-align: right;
-}
-
-ul.horizontal-list-right li {
-    display: inline; /* Hace que los elementos de la lista estén en línea */
-    margin-right: 10px; /* Espacio entre los elementos de la lista */
-}
-
-/* Nav padding left */
-
-ul.horizontal-list-left {
-    list-style-type: none; /* Quitar los puntos de la lista */
-    padding: 0;
-    margin: 0;
-    text-align: left;
-}
-
-ul.horizontal-list-left li {
-    display: inline; /* Hace que los elementos de la lista estén en línea */
-    margin-right: 10px; /* Espacio entre los elementos de la lista */
-}
-
-/* Footer */
 
 footer {
     color: white;
-    background-color: rgb(55, 65, 81);
-    text-decoration: none; /* Quita el subrayado de los enlaces */
+    background-color: #374151;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px ;
 }
 
-/* Fotoer Created By */
+.footerIcons {
+    display: flex;
+    gap: 30px;
+}
 
-ul.footerCreatedBy {
-    list-style-type: none; /* Quitar los puntos de la lista */
+.footerText {
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    background-color: #495955;
+    text-decoration: none;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #6E847E;
+    cursor: pointer;
+}
+
+
+/*CURRICULUM*/
+
+
+main {
+    background-color: #F1F5F9;
+}
+
+.titleExperience {
+    background-color: #F1F5F9;
+    padding: 8px 150px;
+}
+
+.titleExperience ul {
+    color: #F59E0B;
+    font-size: 30px;
+    background-color: #E5E7EB;
+    padding: 24px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+}
+
+.cardExperience {
+    background-color: #495955;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    margin: 8px 150px;
+}
+
+.cardExperience p {
+    background-color: white;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.cardExperinceDescription p {
     text-align: left;
 }
 
-/* Footer Icons */
+.cardExperienceIcons {
+    display: flex;
 
-ul.footerIcons {
-    text-align: right;
+}
+.cardExperienceIcons img{
+    border-radius: 500px;
 }
 
-ul.footerIcons li {
-    display: inline;
-    margin-right: 10px;
-    text-align: right;
+
+/*EDUCATION*/
+
+
+.titleEducation {
+    background-color: #F1F5F9;
+    padding: 8px 150px;
+}
+
+.titleEducation ul {
+    color: #F59E0B;
+    font-size: 30px;
+    background-color: #E5E7EB;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.cardEducation {
+    background-color: 495955;
 }

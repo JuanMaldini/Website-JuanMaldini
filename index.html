@@ -3,63 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About me</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
-    
     <header>
-        <nav class="nav">
-            <!-- nav bar right  -->
-            <ul class="horizontal-list-right">
-                <li><a href="#">About Me</a></li>
-                <li><a href="./pages/curriculum.html">Curriculum</a></li>
-                <li><a href="./pages/contact.html">Contact</a></li>
-                <li><a href="./pages/projects.html">Projects</a></li>
-            </ul>
-
-            <!-- nav bar left  -->
-            <ul class="horizontal-list-left">
-                <li>
-                    <li><img src="./assets/Logo.png" alt="description"width="40" height="40"></li>
-                    <li><a href="#">Juan Maldini</a></li>
-                </li>
-            </ul>
-
-            <!-- Project promotion bar -->
-            <ul class="promotion">
-                <li>New Archviz Web App</li>
-                <li><a href="./pages/apartmentorr.html">See More</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-
-        <section>
-            <h1>About Me</h1>
-        </section>
-
-    </main>
-
-    <footer>
-
-            <div class="footer">
-                <ul class="footerCreatedBy">
-                    <li>© 2024 Created by Juan Maldini</li>
-                </ul>
-
-                <ul class="footerIcons">
-                    <li><img src="./assets/Star.png" alt="Icon Star"width="20" height="20"></li>
-                    <li><img src="./assets/github.png" alt="Icon Github"width="20" height="20"></li>
-                    <li><img src="./assets/email.png" alt="Icon Emai"width="23" height="20"></li>
-                    <li><img src="./assets/whatsapp.png" alt="Icon Whatsapp"width="20" height="20"></li>
-                    <li><img src="./assets/linkedin.png" alt="Icon LinkedIn"width="20"height="20"></li>
+        <nav>
+            <div class="nav">
+                <div class="navRight">
+                    <ul>
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="./pages/curriculum.html">Curriculum</a></li>
+                        <li><a href="./pages/contact.html">Contact</a></li>
+                        <li><a href="./pages/projects.html">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="navLeft">
+                    <ul>
+                        <li><img src="./assets/Logo.png" alt="description"width="40" height="40"></li>
+                        <li><a href="#">Juan Maldini</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="promotion">
+                <ul>
+                    <li>New Archviz Web App</li>
+                    <li><a href="./pages/apartmentorr.html">See More</a></li>
                 </ul>
             </div>
-
+        </nav>
+    </header>
+    <main>
+        <section class="cardsAboutMe">
+            <div class="cardAboutMe01">
+                <div>
+                    <div>
+                        <img src="./assets/Maldini, Juan Augusto.jpg" alt=" ImageJuan Augusto Maldini" width="150" class="imgMe">
+                        <h1>Juan Augusto Maldini</h1>
+                    </div>
+                    <div>
+                        <p>-----------------</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Web Developer</li>
+                            <li>Unreal Engine Developer</li>
+                            <li>3D Artist</li>
+                            <li>FX Artist</li>
+                        </ul>                                    
+                    </div>
+                </div>
+                <div >
+                    <ul class="cardAboutMe01Icons">
+                        <a href="https://1drv.ms/f/s!Ar8ey5uaisekpYhIykoMKDQu1EiUAg" target="_blank"><img src="./assets/Star.png" alt="Icon Star" width="20" height="20"></a>
+                        <a href="https://github.com/Juanmaldini" target="_blank"><img src="./assets/github.png" alt="Icon Github"width="20" height="20"></a>
+                        <a href="mailto:juan.maldini@outlook.com" target="_blank"><img src="./assets/email.png" alt="Icon Mail"width="20" height="20"></a>
+                        <a href="https://api.whatsapp.com/send?phone=393791944958" target="_blank"><img src="./assets/whatsapp.png" alt="Icon Whatsapp"width="20" height="20"></a>
+                        <a href="https://www.linkedin.com/in/juan-augusto-maldini/" target="_blank"><img src="./assets/linkedin.png" alt="Icon LinkedIn"width="20" height="20"></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="cardAboutMe02">
+                <h2>Hello!</h2>
+                <h3>Here is my info</h3>
+                <div>
+                    <a href="./pages/curriculum.html" class="button">>> Curriculum</a>
+                    <a href="./pages/projects.html" class="button">>> Projects</a>
+                </div>
+                <p>As an 3D Artist and Unreal Engine Developer, with more than 7 years of experience in the field, I'm passionate about exploring the latest technologies and working in teams to create impressive projects. My experience as an Unreal Engine developer and my interest in Virtual Production, Development, Modeling, VFX and the IA technologies has allowed me to develop unique skills in the field of 3D. I'm always looking for new opportunities to expand my knowledge and work with talented teams in the industry. I'm open to relocate to continue growing my career.</p>
+            </div>
+        </section>
+        <section class="cloudPortfolio">
+            <a href="https://1drv.ms/f/s!Ar8ey5uaisekpYhIykoMKDQu1EiUAg" target="_blank" class="button">>> Portfolio One drive</a>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <ul class="footerText">
+                <li>© 2024 Created by </li>
+                <li><a href="#">Juan Maldini</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="footerIcons">
+                <a href="https://1drv.ms/f/s!Ar8ey5uaisekpYhIykoMKDQu1EiUAg" target="_blank"><img src="./assets/Star.png" alt="Icon Star" width="20" height="20"></a>
+                <a href="https://github.com/Juanmaldini" target="_blank"><img src="./assets/github.png" alt="Icon Github"width="20" height="20"></a>
+                <a href="mailto:juan.maldini@outlook.com" target="_blank"><img src="./assets/email.png" alt="Icon Mail"width="20" height="20"></a>
+                <a href="https://api.whatsapp.com/send?phone=393791944958" target="_blank"><img src="./assets/whatsapp.png" alt="Icon Whatsapp"width="20" height="20"></a>
+                <a href="https://www.linkedin.com/in/juan-augusto-maldini/" target="_blank"><img src="./assets/linkedin.png" alt="Icon LinkedIn"width="20" height="20"></a>
+            </ul>
+        </div>
     </footer>
-
 </body>
 </html>
