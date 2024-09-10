@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+a {
+    color: white;
+}
+
 h1 {
     font-size: 8px;
 }
@@ -23,7 +27,6 @@ h3 {
 h4 {
     font-size: 20px;
     font-weight: 100;
-
 }
 
 h5 {
@@ -50,10 +53,6 @@ header {
     flex-direction: row;
 }
 
-.navRight a{
-    color: white;
-}
-
 .navRight ul {
     display: flex;
     flex-direction: row;
@@ -67,16 +66,18 @@ header {
     flex-direction: row;
 }
 
-.navLeft a {
-    color: white;
-}
-
 .navLeft ul {
     display: flex;
     flex-direction: row;
     gap: 30px;
     justify-content: left;
     align-items: center;
+}
+
+/*ACTIVE WEB*/
+
+.activeWeb {
+    color: #F59E0B;
 }
 
 /*PROMOTION*/
@@ -149,16 +150,12 @@ header {
 .cardAboutMe02 {
     background-color: #F3F4F6;
     padding: 40px;
-    border-width: 2px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 50px;
-    border: 20px;
-    border-color: #9CA3AF;
     border-radius: 28px;
-    border: 5px solid #9CA3AF;
     max-width: 500px;
     min-width: 500px;
     box-shadow: 0px 0px 10px rgb(110, 110, 110);
@@ -189,10 +186,6 @@ header {
 }
 
 .sectionIconsSkills div {
-    border: 20px;
-    border-color: #9CA3AF;
-    border-radius: 28px;
-    border: 5px solid #9CA3AF;
     background-color: #f6f5f3;
     padding: 40px;
     margin: 0px 150px;
@@ -215,12 +208,17 @@ footer {
     background-color: #374151;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px ;
 }
 
 .footerIcons {
     display: flex;
     gap: 30px;
+}
+
+.footerIcons a img {
+    width: 25px;
 }
 
 .footerText {
@@ -232,7 +230,7 @@ footer {
 
 .button {
     background-color: #495955;
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 10px rgb(110, 110, 110);
     text-decoration: none;
     color: white;
     padding: 16px 32px;
@@ -245,10 +243,6 @@ footer {
     box-shadow: 0px 0px 10px black;
     cursor: pointer;
 }
-
-/*CURRICULUM*/
-
-
 
 /*EXPERIENCE TITLE*/
 
