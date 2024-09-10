@@ -13,14 +13,7 @@ a {
     transition: all 0.3s ease;
 }
 
-a:hover {
-    color: #d68800;
 
-}
-
-a:active {
-    color: #a16600;
-}
 
 h1 {
     font-size: 8px;
@@ -50,7 +43,7 @@ h6 {
 }
 
 header {
-    background-color: #374151;
+    background-color: #495955;
 }
 
 /*NAV BAR*/
@@ -219,7 +212,7 @@ header {
 
 footer {
     color: white;
-    background-color: #374151;
+    background-color: #495955;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -403,7 +396,7 @@ footer {
 
 .titleProjectsType {
     background-color: #D1D5DB;
-    padding: 8px 150px;
+    padding: 0px 150px 40px 150px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -412,20 +405,29 @@ footer {
     gap: 24px;
 }
 
+
+
 .projectSection {
     background-color: #D1D5DB;
-    margin: 0px 150px;
+    padding: 0px 150px;
+}
+
+.projectSection div {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;}
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
 
 .projectCard {
     padding: 12px;
+
     max-width: 350px;
     max-height: 650px;
     background-color: #495955;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     text-align: center;
     border-radius: 16px;
     gap: 16px;
@@ -456,4 +458,14 @@ footer {
     color: white;
     padding: 8px;
     border-radius: 8px;
+}
+
+/*PRESS SETUP*/
+
+a:hover {
+    color: #d68800;
+}
+
+a:active {
+    color: #a16600;
 }
