@@ -9,15 +9,18 @@ h1 {
 }
 
 h2 {
-    font-size: 32px;
+    font-size:90px;
+    color: #F59E0B;
 }
 
 h3 {
-    font-size: 36px;
+    font-size: 32px;
+    font-weight: 100;
 }
 
 h4 {
     font-size: 20px;
+    font-weight: 100;
 
 }
 
@@ -55,7 +58,6 @@ header {
     gap: 30px;
     justify-content: right;
     align-items: center;
-
 }
 
 .navLeft {
@@ -73,7 +75,6 @@ header {
     gap: 30px;
     justify-content: left;
     align-items: center;
-
 }
 
 /*PROMOTION*/
@@ -84,7 +85,6 @@ header {
     padding: 20px;
     border-radius:  16px;
     margin: 0px 150px;
-
 }
 
 .promotion ul {
@@ -145,6 +145,7 @@ header {
 }
 
 .cardAboutMe02 {
+    background-color: #F3F4F6;
     padding: 40px;
     border-width: 2px;
     display: flex;
@@ -161,6 +162,12 @@ header {
     box-shadow: 0px 0px 10px rgb(110, 110, 110);
 }
 
+.cardAboutMe02 ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .cardAboutMe02 div {
     display:flex;
     flex-direction: row;
@@ -168,24 +175,31 @@ header {
 }
 
 .cloudPortfolio {
-    background-color: #F3F4F6;
+    background-color: #D1D5DB;
     padding: 20px;
     display: flex;
     justify-content: center;
 }
 
 .sectionIconsSkills {
-
+    background-color: #D1D5DB;
+    padding: 16px;
 }
 
 .sectionIconsSkills div {
-    padding: 40px 150px;
-    background-color: #D1D5DB;
+    border: 20px;
+    border-color: #9CA3AF;
+    border-radius: 28px;
+    border: 5px solid #9CA3AF;
+    background-color: #f6f5f3;
+    padding: 40px;
+    margin: 0px 150px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 40px;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    border-radius: 28px;
+    box-shadow: 0px 0px 10px rgb(110, 110, 110);
 }
 
 .sectionIconsSkills div img {
@@ -232,21 +246,18 @@ footer {
 
 /*CURRICULUM*/
 
-main {
-    background-color: #F1F5F9;
-}
+
 
 /*EXPERIENCE TITLE*/
 
 .titleExperience {
-    background-color: #F1F5F9;
+    background-color: #D1D5DB;
     padding: 8px 150px;
 }
 
 .titleExperience ul {
     color: #F59E0B;
-    font-size: 30px;
-    background-color: #E5E7EB;
+    background-color: #F3F4F6;
     box-shadow: 0px 0px 10px #6e6e6e;
     padding: 24px 8px;
     display: flex;
@@ -257,12 +268,16 @@ main {
 
 /*EXPERIENCE CARD*/
 
+.sectionExperience {
+    background-color: #D1D5DB;
+}
+
 .cardExperience {
+    margin: 0px 150px;
     background-color: #495955;
     display: flex;
     justify-content: space-between;
     border-radius: 12px;
-    margin: 8px 150px;
     box-shadow: 0px 0px 10px #6e6e6e;
 }
 
@@ -287,7 +302,6 @@ main {
     text-align: left;
 }
 
-
 .cardExperienceIcons {
     display: flex;
     flex-wrap: wrap;
@@ -300,14 +314,14 @@ main {
 /*EDUCATION TITLE*/
 
 .titleCenter {
-    background-color: #F1F5F9;
+    background-color: #D1D5DB;
     padding: 8px 150px;
 }
 
 .titleCenter ul {
     color: #F59E0B;
     font-size: 30px;
-    background-color: #E5E7EB;
+    background-color: #F3F4F6;
     box-shadow: 0px 0px 10px #6e6e6e;
     padding: 24px;
     display: flex;
@@ -336,12 +350,21 @@ main {
 
 /*CONTACT*/
 
+.contactSection {
+    background-color: #D1D5DB;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+}
+
 .contactCard {
     background-color: #495955;
+    box-shadow: 0px 0px 10px #6e6e6e;
     margin: 0px 150px;
     padding: 16px;
     border-radius: 16px;
     color: white;
+    max-width: 1000px;
 }
 
 .contactCard form ul {
@@ -366,21 +389,22 @@ main {
 /*PROJECTS*/
 
 .titleProjectsType {
-    background-color: #F1F5F9;
+    background-color: #D1D5DB;
     padding: 8px 150px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 24px;
 }
 
 .projectSection {
-    background-color: lightblue;
+    background-color: #D1D5DB;
     margin: 0px 150px;
     display: flex;
     flex-wrap: wrap;
-}
+    justify-content: space-between;}
 
 .projectCard {
     padding: 12px;
@@ -389,12 +413,9 @@ main {
     background-color: #495955;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
-    justify-content: space-between;
     border-radius: 16px;
     gap: 16px;
-
 }
 
 .projectCard img{
@@ -423,4 +444,3 @@ main {
     padding: 8px;
     border-radius: 8px;
 }
-
