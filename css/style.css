@@ -1,3 +1,5 @@
+/*INITIAL OVERRIDE*/
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +10,16 @@
 
 a {
     color: white;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #d68800;
+
+}
+
+a:active {
+    color: #a16600;
 }
 
 h1 {
@@ -16,7 +28,7 @@ h1 {
 
 h2 {
     font-size:90px;
-    color: #F59E0B;
+    color: #ffae23;
 }
 
 h3 {
@@ -40,6 +52,8 @@ h6 {
 header {
     background-color: #374151;
 }
+
+/*NAV BAR*/
 
 .nav {
     display: flex;
@@ -80,7 +94,7 @@ header {
     color: #F59E0B;
 }
 
-/*PROMOTION*/
+/*PROMOTION AREA*/
 
 .promotion {
     background-color: #E5E7EB;
@@ -248,7 +262,7 @@ footer {
 
 .titleExperience {
     background-color: #D1D5DB;
-    padding: 8px 150px;
+    padding: 40px 150px;
 }
 
 .titleExperience ul {
@@ -266,6 +280,8 @@ footer {
 
 .sectionExperience {
     background-color: #D1D5DB;
+    display: flex;
+    justify-content: center;
 }
 
 .cardExperience {
@@ -275,6 +291,7 @@ footer {
     justify-content: space-between;
     border-radius: 12px;
     box-shadow: 0px 0px 10px #6e6e6e;
+    max-width: 1000px;
 }
 
 .cardExperience p {
@@ -301,6 +318,8 @@ footer {
 .cardExperienceIcons {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    gap
 }
 
 .cardExperienceIcons img{
@@ -311,7 +330,7 @@ footer {
 
 .titleCenter {
     background-color: #D1D5DB;
-    padding: 8px 150px;
+    padding: 40px 150px;
 }
 
 .titleCenter ul {
@@ -348,27 +367,25 @@ footer {
 
 .contactSection {
     background-color: #D1D5DB;
-    padding: 16px;
+    
     display: flex;
     justify-content: center;
+
 }
 
 .contactCard {
     background-color: #495955;
     box-shadow: 0px 0px 10px #6e6e6e;
-    margin: 0px 150px;
     padding: 16px;
     border-radius: 16px;
     color: white;
-    max-width: 1000px;
+
 }
 
 .contactCard form ul {
     padding: 8px;
     display: flex;
-    justify-content: left;
     gap: 16px;
-    flex-wrap: wrap;
 }
 
 .contactCardMessage {
