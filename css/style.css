@@ -310,7 +310,7 @@ footer {
     justify-content: space-between;
     border-radius: 12px;
     box-shadow: 0px 0px 10px #6e6e6e;
-    max-width: 1100px;
+    max-width: 1300px;
 }
 
 .cardExperience:hover {
@@ -320,36 +320,36 @@ footer {
 .cardExperience p {
     background-color: white;
     padding: 8px;
-
     border-radius: 12px;
     text-align: center;
 }
 
 .cardExperienceJob {
-    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.cardExperinceDescription {
-    width: 50%;
-    display: flex;
-}
-
-.cardExperinceDescription p {
-    text-align: left;
-}
-
-.cardExperienceIcons {
+.cardExperienceJobIcons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 8px;
 }
 
-.cardExperienceIcons img{
+.cardExperienceJobIcons img{
     border-radius: 500px;
+}
+
+.cardExperienceDescription {
+    display: flex;
+    height: 100%;
+}
+
+.cardExperienceDescription p {
+    display: flex;
+    height: 100%;
+    text-align: left;
 }
 
 /*EDUCATION TITLE*/
@@ -543,7 +543,7 @@ a:active {
 }
 
 .skillCard:hover {
-    scale: 102%;
+    scale: 104%;
 }
 
 .skillCardPercentage {
