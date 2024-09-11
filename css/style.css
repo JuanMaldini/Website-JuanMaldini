@@ -13,8 +13,6 @@ a {
     transition: all 0.3s ease;
 }
 
-
-
 h1 {
     font-size: 8px;
 }
@@ -52,7 +50,7 @@ header {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 40px 150px;
+    padding: 40px 150px 16px;
 }
 
 .navRight {
@@ -81,6 +79,10 @@ header {
     align-items: center;
 }
 
+.navSpace {
+    padding: 8px;
+}
+
 /*ACTIVE WEB*/
 
 .activeWeb {
@@ -90,7 +92,7 @@ header {
 /*PROMOTION AREA*/
 
 .promotion {
-    background-color: #E5E7EB;
+    background-color: #F3F4F6;
     flex-direction: row;
     padding: 20px;
     border-radius:  16px;
@@ -101,6 +103,7 @@ header {
     display: flex;
     gap: 50px;
     justify-content: center;
+    
 }
 
 /*ABOUT ME*/
@@ -360,7 +363,6 @@ footer {
 
 .contactSection {
     background-color: #D1D5DB;
-    
     display: flex;
     justify-content: center;
 
