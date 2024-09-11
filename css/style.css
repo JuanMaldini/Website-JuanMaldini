@@ -120,6 +120,7 @@ header {
 }
 
 .cardAboutMe01 {
+    transition: scale 0.3s ease;
     background-color: #F3F4F6;
     display: flex;
     flex-direction: column;
@@ -127,6 +128,10 @@ header {
     max-width: 500px;
     min-width: 500px;
     box-shadow: 0px 0px 10px #6e6e6e;
+}
+
+.cardAboutMe01:hover {
+    scale:101%;
 }
 
 .cardAboutMe01a {
@@ -158,6 +163,7 @@ header {
 }
 
 .cardAboutMe02 {
+    transition: scale 0.3s ease;
     background-color: #F3F4F6;
     padding: 40px;
     display: flex;
@@ -169,6 +175,10 @@ header {
     max-width: 500px;
     min-width: 500px;
     box-shadow: 0px 0px 10px rgb(110, 110, 110);
+}
+
+.cardAboutMe02:hover {
+    scale:101%;
 }
 
 .cardAboutMe02 ul {
@@ -208,7 +218,12 @@ header {
 }
 
 .sectionIconsSkills div img {
+    transition: scale 0.3s ease;
     width: 60px;
+}
+
+.sectionIconsSkills div img:hover {
+    scale: 110%;
 }
 
 /*FOOTER*/
@@ -281,6 +296,7 @@ footer {
 }
 
 .cardExperience {
+    transition: scale 0.3s ease;
     margin: 0px 150px;
     padding: 8px;
     background-color: #495955;
@@ -289,6 +305,10 @@ footer {
     border-radius: 12px;
     box-shadow: 0px 0px 10px #6e6e6e;
     max-width: 1000px;
+}
+
+.cardExperience:hover {
+    scale: 101%;
 }
 
 .cardExperience p {
@@ -421,7 +441,10 @@ footer {
     gap: 40px;
 }
 
+
+
 .projectCard {
+    transition: scale 0.3s ease;
     padding: 12px;
     max-width: 350px;
     max-height: 650px;
@@ -431,6 +454,10 @@ footer {
     text-align: center;
     border-radius: 16px;
     gap: 16px;
+}
+
+.projectCard:hover {
+    scale: 101%;
 }
 
 .projectCard img{
@@ -464,6 +491,7 @@ footer {
 
 a:hover {
     color: #d68800;
+
 }
 
 a:active {
@@ -509,8 +537,9 @@ a:active {
 }
 
 .skillCard {
+    transition: scale 0.3s ease;
     background-color: #f8f8f8;    /*ARREGLAR HERENCIA*/
-    width: 170px;
+    width: 190px;
     height: 60px;
     display: flex;
     align-items: center;
@@ -519,6 +548,10 @@ a:active {
     margin: 16px;
     border-radius: 12px;
     box-shadow: 0px 0px 10px #6e6e6e;
+}
+
+.skillCard:hover {
+    scale: 102%;
 }
 
 .skillCardPercentage {
