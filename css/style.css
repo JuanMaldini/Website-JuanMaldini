@@ -8,6 +8,8 @@
     text-decoration: none;
 }
 
+
+
 a {
     color: white;
     transition: all 0.3s ease;
@@ -292,7 +294,9 @@ footer {
 .sectionExperience {
     background-color: #D1D5DB;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
 }
 
 .cardExperience {
@@ -301,10 +305,12 @@ footer {
     padding: 8px;
     background-color: #495955;
     display: flex;
+    flex-direction: row;
+    gap: 8px;
     justify-content: space-between;
     border-radius: 12px;
     box-shadow: 0px 0px 10px #6e6e6e;
-    max-width: 1000px;
+    max-width: 1100px;
 }
 
 .cardExperience:hover {
@@ -321,6 +327,9 @@ footer {
 
 .cardExperienceJob {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .cardExperinceDescription {
@@ -336,7 +345,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap
+    gap: 8px;
 }
 
 .cardExperienceIcons img{
@@ -362,23 +371,6 @@ footer {
 }
 
 /*EDUCATION CARD*/
-
-.cardEducation {
-    background-color: #495955;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 12px;
-    margin: 8px 150px;
-}
-
-.cardEducationInstitute {
-    display: flex;
-    justify-content: space-between;
-}
-
-.cardEducation p {
-    background-color: white;
-}
 
 /*CONTACT*/
 
