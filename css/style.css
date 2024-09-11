@@ -282,6 +282,7 @@ footer {
 
 .cardExperience {
     margin: 0px 150px;
+    padding: 8px;
     background-color: #495955;
     display: flex;
     justify-content: space-between;
@@ -293,7 +294,7 @@ footer {
 .cardExperience p {
     background-color: white;
     padding: 8px;
-    margin: 8px;
+
     border-radius: 12px;
     text-align: center;
 }
@@ -422,7 +423,6 @@ footer {
 
 .projectCard {
     padding: 12px;
-
     max-width: 350px;
     max-height: 650px;
     background-color: #495955;
@@ -496,4 +496,87 @@ a:active {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 16px;
+}
+
+/*SKILLS SECTION*/
+
+.skillsSection {
+    background-color: #D1D5DB;
+    padding: 0px 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skillCard {
+    background-color: #f8f8f8;    /*ARREGLAR HERENCIA*/
+    width: 170px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px #6e6e6e;
+}
+
+.skillCardPercentage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 46px;
+    height: 46px;
+    flex-shrink: 0;
+}
+
+/*PROGRESS BAR CIRCLE*/
+
+@keyframes progress {
+    0% { --percentage: 0; }
+    100% { --percentage: var(--value); }
+}
+
+@property --percentage {
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+}
+
+[role="progressbar"] {
+    --percentage: var(--value);
+    --primary: #FBBF24;
+    --secondary: black;
+    --size: 45px;
+    animation: progress 2s 0.5s forwards;
+    width: var(--size);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+
+[role="progressbar"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(var(--primary) calc(var(--percentage) * 1%), var(--secondary) 0);
+    mask: radial-gradient(white 55%, transparent 0);
+    mask-mode: alpha;
+    -webkit-mask: radial-gradient(#0000 55%, #000 0);
+    -webkit-mask-mode: alpha;
+}
+
+[role="progressbar"]::after {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 3);
+    color: var(--primary);
+    color: black;
 }
