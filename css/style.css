@@ -122,8 +122,8 @@ header {
 }
 
 .cardAboutMe01 {
-    transition: scale 0.3s ease;
-    will-change: scale;
+    transition: transform 0.3s ease;
+    will-change: transform;
     background-color: #F3F4F6;
     display: flex;
     flex-direction: column;
@@ -134,7 +134,7 @@ header {
 }
 
 .cardAboutMe01:hover {
-    scale:101%;
+    transform: scale(1.02);
 }
 
 .cardAboutMe01a {
@@ -154,6 +154,10 @@ header {
     gap: 20px;
     border-bottom-left-radius: 28px;
     border-bottom-right-radius: 28px;
+}
+
+.cardAboutMe01b img:hover {
+    transform: scale(1.1);
 }
 
 .imgMe {
@@ -182,7 +186,7 @@ header {
 }
 
 .cardAboutMe02:hover {
-    transform: scale(1.01);
+    transform: scale(1.02);
 }
 
 .cardAboutMe02 ul {
@@ -222,12 +226,13 @@ header {
 }
 
 .sectionIconsSkills div img {
-    transition: scale 0.3s ease;
+    transition: transform 0.3s ease;
+    will-change: transform;
     width: 60px;
 }
 
 .sectionIconsSkills div img:hover {
-    scale: 110%;
+    transform: scale(1.2);
 }
 
 /*FOOTER*/
@@ -248,6 +253,11 @@ footer {
 
 .footerIcons a img {
     width: 25px;
+    transition: transform 0.3s ease;
+}
+
+.footerIcons a img:hover {
+    transform: scale(1.1);
 }
 
 .footerText {
@@ -323,18 +333,17 @@ footer {
     transform: scale(1.01);
 }
 
-.cardExperience p {
-    background-color: white;
-    padding: 8px;
-    border-radius: 12px;
-    text-align: center;
-}
-
 .cardExperienceJob {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: 40%;
+}
+
+.cardExperienceJob p {
+    background-color: white;
+    padding: 8px;
+    border-radius: 12px;
+    text-align: center;
 }
 
 .cardExperienceJobIcons {
@@ -348,8 +357,12 @@ footer {
     border-radius: 500px;
 }
 
-.cardExperienceDescription p {
+.cardExperienceDescription div {
     height: 100%;
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 12px;
+    text-align: center;
 }
 
 .cardExperienceDescription p {
@@ -495,19 +508,31 @@ a:active {
 
 .rrDescription {
     background-color: #D1D5DB;
+    display: flex;
+    padding: 0px 150px;
 }
 
 .rrDescription01 {
     display: flex;
     flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
 }
 
 .rrDescription02 {
+    background-color: #f8f8f8;                      /*PROBLEMAS DE HERENCIA COLOR*/
+    box-shadow: 0px 0px 10px rgb(110, 110, 110);
     display: flex;
     flex-direction: column;
+    gap: 16px;
+    width: 50%;
+    border-radius: 12px;
+    padding: 16px;
 }
 
-.rrGallery  {
+.rrGallery {
     background-color: #D1D5DB;
     padding: 0px 150px;
 }
@@ -517,6 +542,15 @@ a:active {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 16px;
+}
+
+.rrGallery img {
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+
+.rrGallery img:hover {
+    transform: scale(1.03);
 }
 
 /*SKILLS SECTION*/
