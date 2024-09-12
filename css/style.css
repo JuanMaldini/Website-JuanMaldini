@@ -8,8 +8,6 @@
     text-decoration: none;
 }
 
-
-
 a {
     color: white;
     transition: all 0.3s ease;
@@ -154,6 +152,11 @@ header {
     gap: 20px;
     border-bottom-left-radius: 28px;
     border-bottom-right-radius: 28px;
+}
+
+.cardAboutMe01b img {
+    transition: transform 0.3s ease;
+    will-change: transform;
 }
 
 .cardAboutMe01b img:hover {
