@@ -307,6 +307,7 @@ footer {
 }
 
 .button:hover {
+    color: white;
     transform: scale(1.03);
     background-color: #546662;
     box-shadow: 0px 0px 10px black;
