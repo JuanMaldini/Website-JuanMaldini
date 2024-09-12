@@ -255,24 +255,6 @@ footer {
     gap: 20px;
 }
 
-/*BUTTON*/
-
-.button {
-    background-color: #495955;
-    box-shadow: 0px 0px 10px rgb(110, 110, 110);
-    text-decoration: none;
-    color: white;
-    padding: 16px 32px;
-    border-radius: 16px;
-    text-align: center;
-}
-
-.button:hover {
-    background-color: #546662;
-    box-shadow: 0px 0px 10px black;
-    cursor: pointer;
-}
-
 /*EXPERIENCE TITLE*/
 
 .titleExperience {
@@ -289,6 +271,27 @@ footer {
     align-items: center;
     justify-content: space-between;
     border-radius: 12px;
+}
+
+/*BUTTON*/
+
+.button {
+    transition: transform 0.3s ease;
+    will-change: transform;
+    background-color: #495955;
+    box-shadow: 0px 0px 10px rgb(110, 110, 110);
+    text-decoration: none;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.button:hover {
+    transform: scale(1.03);
+    background-color: #546662;
+    box-shadow: 0px 0px 10px black;
+    cursor: pointer;
 }
 
 /*EXPERIENCE CARD*/
@@ -331,6 +334,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    width: 40%;
 }
 
 .cardExperienceJobIcons {
@@ -344,14 +348,11 @@ footer {
     border-radius: 500px;
 }
 
-.cardExperienceDescription {
-    display: flex;
+.cardExperienceDescription p {
     height: 100%;
 }
 
 .cardExperienceDescription p {
-    display: flex;
-    height: 100%;
     text-align: left;
 }
 
