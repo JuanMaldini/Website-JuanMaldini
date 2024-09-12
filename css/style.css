@@ -123,6 +123,7 @@ header {
 
 .cardAboutMe01 {
     transition: scale 0.3s ease;
+    will-change: scale;
     background-color: #F3F4F6;
     display: flex;
     flex-direction: column;
@@ -165,7 +166,8 @@ header {
 }
 
 .cardAboutMe02 {
-    transition: scale 0.3s ease;
+    transition: transform 0.3s ease;
+    will-change: transform;
     background-color: #F3F4F6;
     padding: 40px;
     display: flex;
@@ -180,7 +182,7 @@ header {
 }
 
 .cardAboutMe02:hover {
-    scale:101%;
+    transform: scale(1.01);
 }
 
 .cardAboutMe02 ul {
@@ -300,7 +302,8 @@ footer {
 }
 
 .cardExperience {
-    transition: scale 0.3s ease;
+    transition: transform 0.3s ease;
+    will-change: transform;
     margin: 0px 150px;
     padding: 8px;
     background-color: #495955;
@@ -314,7 +317,7 @@ footer {
 }
 
 .cardExperience:hover {
-    scale: 101%;
+    transform: scale(1.01);
 }
 
 .cardExperience p {
@@ -425,7 +428,7 @@ footer {
     padding: 0px 150px;
 }
 
-.projectSection div {
+.projectSection {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -433,46 +436,43 @@ footer {
     gap: 40px;
 }
 
-
-
 .projectCard {
-    transition: scale 0.3s ease;
-    padding: 12px;
-    max-width: 350px;
-    max-height: 650px;
-    background-color: #495955;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
+    transition: transform 0.3s ease;
+    will-change: transform;
+    padding: 12px;
+    min-width: 340px;
+    background-color: #376d5f;
     border-radius: 16px;
+}
+
+.projectCard ul {
+    display: flex;
+    flex-direction: column;
     gap: 16px;
 }
 
 .projectCard:hover {
-    scale: 101%;
+    transform: scale(1.01);
 }
 
 .projectCard img{
     background-color: #FBBF24;
 }
 
-.projectCard ul li {
+.projectCardTag {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 36px;
+    flex-direction: row;
+    flex-wrap: wrap;q
 }
 
-.projectCardTag ul {
+.projectCardTag li {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    object-fit: cover;
-    gap: 16px;
-}
-
-.projectCardTag li {
     background-color: #374151;
     color: white;
     padding: 8px;
@@ -529,7 +529,8 @@ a:active {
 }
 
 .skillCard {
-    transition: scale 0.3s ease;
+    transition: transform 0.3s ease;
+    will-change: transform;
     background-color: #f8f8f8;    /*ARREGLAR HERENCIA*/
     width: 190px;
     height: 60px;
@@ -543,7 +544,7 @@ a:active {
 }
 
 .skillCard:hover {
-    scale: 104%;
+    transform: scale(1.04);
 }
 
 .skillCardPercentage {
