@@ -217,6 +217,8 @@ header {
 }
 
 .sectionIconsSkills div {
+    transition: transform 0.3s ease;
+    will-change: transform;
     background-color: #f6f5f3;
     padding: 40px;
     margin: 0px 150px;
@@ -226,6 +228,10 @@ header {
     gap: 50px;
     border-radius: 28px;
     box-shadow: 0px 0px 10px rgb(110, 110, 110);
+}
+
+.sectionIconsSkills div:hover {
+    transform: scale(1.015);
 }
 
 .sectionIconsSkills div img {
