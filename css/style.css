@@ -467,15 +467,25 @@ footer {
     transition: transform 0.3s ease;
     will-change: transform;
     padding: 12px;
-    min-width: 340px;
+    width: 350px;
+    height: 670px;
     background-color: #376d5f;
     border-radius: 16px;
     box-shadow: 0px 0px 10px #6e6e6e;
 }
 
+.projectCard video {
+    height: 160px;
+}
+
+.projectCard img {
+    width: 300px;
+}
+
 .projectCard ul {
     display: flex;
     flex-direction: column;
+    justify-content:space-between;
     gap: 16px;
 }
 
