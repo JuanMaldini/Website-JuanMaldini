@@ -402,6 +402,7 @@ footer {
     display: flex;
     justify-content: center;
     border-radius: 12px;
+    min-width: 400px;
 }
 
 /*EDUCATION CARD*/
@@ -537,7 +538,10 @@ a:active {
 .rrDescription {
     background-color: #D1D5DB;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 0px 150px;
+    gap: 32px;
 }
 
 .rrDescription01 {
@@ -547,6 +551,8 @@ a:active {
     justify-content: center;
     align-items: center;
     gap: 16px;
+    min-width: 400px;
+    max-width: 600px;
 }
 
 .rrDescription02 {
@@ -559,6 +565,8 @@ a:active {
     width: 50%;
     border-radius: 12px;
     padding: 16px;
+    min-width: 400px;
+    max-width: 600px;
 }
 
 .rrGallery {
