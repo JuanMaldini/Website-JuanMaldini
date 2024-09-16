@@ -6,6 +6,7 @@
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
+    list-style: none;
 }
 
 a {
@@ -54,17 +55,10 @@ header {
     padding: 16px;
 }
 
-.navRight {
-    display: flex;
-    display: none;
-    text-align: end;
-    top: 16px;
-    flex-direction: column;
-    align-items: end;
-}
-
 .navLeft {
     display: flex;
+    flex-direction: row;
+    gap: 32px;
     align-items: center;
 }
 
@@ -76,17 +70,24 @@ header {
     padding: 8px;
 }
 
-/*NAB BURGUER*/
-
-.navBurguer {
-    transition: transform 0.3s ease;
-    will-change: transform;
+.navRight {
+    z-index: 1;
+    background-color: #232b29e1;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 24px;
+    gap: 32px;
+    padding: 40px;
+    border-radius: 16px;
+    text-align: end;
+    right: -180px;
+    transition: right 0.3s ease;
 }
 
-.navBurguer:hover {
-    transform: scale(1.05);
+.navRight.active {
+    right: 16px;
 }
-
 
 /*ACTIVE WEB*/
 
@@ -139,8 +140,9 @@ header {
 }
 
 .cardAboutMe01a {
-    display: flex;
     margin: 16px;
+    padding: 16px 0px;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 16px;
@@ -194,7 +196,7 @@ header {
     width: 100%;
     max-width: 400px;
     margin: 0px 8px;
-    padding: 8px;
+    padding: 16px;
     gap: 8px;
     flex-wrap: wrap;
     flex-direction: column;
@@ -721,13 +723,16 @@ a:active {
         display:none;
     }
     .navRight {
-        display:block;
         display: flex;
         flex-direction: row;
-        gap: 16px;
+        background-color: #232b2900;
+        position: relative;
+        right: 0px;
+        top: 0px;
+        padding: 16px;
     }
-    .navLeft {
-        gap: 16px;
+    .navRight:hover {
+        right: 0px;
     }
     .navLeftB {
         display: block;
