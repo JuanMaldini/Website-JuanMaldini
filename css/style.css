@@ -56,7 +56,7 @@ header {
 
 .navRight {
     display: flex;
-    display: block;
+    display: none;
     text-align: end;
     top: 16px;
     flex-direction: column;
