@@ -91,7 +91,7 @@ header {
     flex-wrap: wrap;
     gap: 8px;
     justify-content: center;
-    padding: 8px 16px;
+    padding: 16px;
     margin: 0px 16px;
     border-radius: 16px;
 }
@@ -227,7 +227,7 @@ header {
 .sectionIconsSkills ul {
     transition: transform 0.3s ease;
     will-change: transform;
-    background-color: #f6f5f3;
+    background-color: #F3F4F6;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -370,7 +370,7 @@ footer {
 }
 
 .cardExperienceJob p {
-    background-color: white;
+    background-color: #F3F4F6;
     padding: 8px;
     border-radius: 12px;
     text-align: center;
@@ -389,7 +389,7 @@ footer {
 
 .cardExperienceDescription div {
     height: 100%;
-    background-color: #ffffff;
+    background-color: #F3F4F6;
     padding: 8px;
     border-radius: 12px;
     text-align: center;
@@ -473,6 +473,8 @@ footer {
     gap: 24px;
 }
 
+
+
 .projectSection {
     background-color: #D1D5DB;
     padding: 16px;
@@ -484,9 +486,11 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 16px;
+    align-items: start;
 }
 
 .projectCard {
+    color: #f8f8f8;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -494,8 +498,7 @@ footer {
     will-change: transform;
     padding: 12px;
     width: 350px;
-    height: 670px;
-    background-color: #376d5f;
+    background-color: #495955;
     border-radius: 16px;
     box-shadow: 0px 0px 10px #6e6e6e;
 }
@@ -523,17 +526,10 @@ footer {
     background-color: #FBBF24;
 }
 
-.projectCardTag {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;q
-}
-
 .projectCardTag li {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     background-color: #374151;
     color: white;
     padding: 8px;
@@ -615,7 +611,7 @@ a:active {
 .skillCard {
     transition: transform 0.3s ease;
     will-change: transform;
-    background-color: #f8f8f8;    /*ARREGLAR HERENCIA*/
+    background-color: #F3F4F6;    /*ARREGLAR HERENCIA*/
     width: 150px;
     height: 60px;
     display: flex;
@@ -755,3 +751,4 @@ a:active {
         gap: 32px;
     }
 }
+
