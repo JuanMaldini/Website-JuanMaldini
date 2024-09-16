@@ -89,6 +89,15 @@ header {
     right: 16px;
 }
 
+.navBurguer {
+    transition: opacity 0.3s ease;
+    opacity: 100%;
+}
+
+.navBurguer.active {
+    opacity: 0%;
+}
+
 /*ACTIVE WEB*/
 
 .activeWeb {
