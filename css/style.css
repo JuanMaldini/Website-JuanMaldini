@@ -94,6 +94,7 @@ header {
 }
 
 .navBurguer {
+    z-index: 2;
     position: fixed;
     transition: opacity 0.3s ease;
     opacity: 100%;
