@@ -2,12 +2,7 @@ const navBurguer = document.querySelector(".navBurguer");
 const navRight = document.querySelector(".navRight");
 
 // Show the menu when hovering over the icon or the menu itself
-navBurguer.addEventListener("mouseenter", () => {
-    navRight.classList.add("active");
-    navBurguer.classList.add("active");
-});
-
-navRight.addEventListener("mouseenter", () => {
+navBurguer.addEventListener("click", () => {
     navRight.classList.add("active");
     navBurguer.classList.add("active");
 });
