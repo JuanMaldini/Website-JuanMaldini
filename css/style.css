@@ -8,6 +8,9 @@
     text-decoration: none;
     list-style: none;
 }
+body {
+    background-color: #D1D5DB;
+}
 
 a {
     color: white;
@@ -454,14 +457,10 @@ footer {
 
 /*EDUCATION TITLE*/
 
-.titleCenter  {
-    background-color: #D1D5DB;
-    padding: 16px;
-}
-
-.titleCenter ul {
+.titleCenter {
     width: 100%;
-    padding: 8px;
+    padding: 16px;
+    margin: 16px;
     color: #F59E0B;
     font-size: 30px;
     background-color: #F3F4F6;
