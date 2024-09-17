@@ -213,6 +213,7 @@ header {
     display: flex;
     flex-direction: row;
     width: 30px;
+    color: #a16600;
 }
 
 .cardAboutMe01b img:hover {
