@@ -63,7 +63,6 @@ header {
     align-items: center;
     left: 0px;
     position: absolute;
-    
 }
 
 .navLeftB {
@@ -71,7 +70,11 @@ header {
 }
 
 .navSpace {
-    padding: 8px;
+    background-color: #495955;
+    display: flex;
+    justify-content: center;
+    color: rgb(233, 233, 233);
+    padding: 8px 0px 8px 0px;
 }
 
 .navRight {
