@@ -109,7 +109,6 @@ header {
     background-color: #495955;
     padding: 6px 12px;
     margin: 16px;
-
     border-radius: 16px;
     transition: transform 0.3s ease;
     will-change: transform;
@@ -343,24 +342,7 @@ footer {
 
 /*EXPERIENCE TITLE*/
 
-.titleExperience {
-    background-color: #D1D5DB;
-    padding: 16px
-}
 
-.titleExperience ul {
-    color: #F59E0B;
-    background-color: #F3F4F6;
-    box-shadow: 0px 0px 10px #6e6e6e;
-    width: 100%;
-    padding: 16px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 12px;
-}
 
 /*BUTTON*/
 
@@ -461,11 +443,13 @@ footer {
     padding: 16px;
     margin: 16px;
     color: #F59E0B;
-    font-size: 30px;
     background-color: #F3F4F6;
     box-shadow: 0px 0px 10px #6e6e6e;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: space-around;
+    align-items: center;
     border-radius: 12px;
 }
 
