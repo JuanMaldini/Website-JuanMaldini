@@ -377,27 +377,33 @@ footer {
     padding: 0px 16px;
 }
 
-.cardExperience {
-    transition: transform 0.3s ease;
-    will-change: transform;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 8px;
-    background-color: #495955;
-    border-radius: 12px;
-    box-shadow: 0px 0px 10px #6e6e6e;
-    gap: 8px;
-
-}
-
 .sectionExperience article {
     display: flex;
     justify-content: center;
     max-width: 80%;
 }
 
-.cardExperience:hover {
-    transform: scale(1.01);
+.cardExperience {
+    transition: transform 0.3s ease;
+    will-change: transform;
+    
+    display: grid;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    
+    background-color: #495955;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px #6e6e6e;
+    padding: 8px;
+    width: 100%;
+
+
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "cardExperienceJob cardExperienceDescription"
+    "cardExperienceJobIcons cardExperienceJobIcons"
+    ;
 }
 
 .cardExperienceJob {
@@ -405,36 +411,46 @@ footer {
     flex-direction: column;
     gap: 8px;
     width: 100%;
+    justify-content: start;
+    grid-area: cardExperienceJob;
 }
 
-.cardExperienceJob p {
+.cardExperienceDescription {
     background-color: #F3F4F6;
     padding: 8px;
     border-radius: 12px;
     text-align: center;
+    grid-area: cardExperienceDescription;
 }
 
 .cardExperienceJobIcons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 8px;
+    justify-content: center;
+    gap: 16px;
+    grid-area: cardExperienceJobIcons;
+}
+
+
+.cardExperienceDescription p {
+    text-align: left;
 }
 
 .cardExperienceJobIcons img{
     border-radius: 500px;
+    width: 30px;
 }
 
-.cardExperienceDescription div {
-    height: 100%;
+.cardExperience p {
     background-color: #F3F4F6;
     padding: 8px;
     border-radius: 12px;
     text-align: center;
+    height: 100%;
 }
 
-.cardExperienceDescription p {
-    text-align: left;
+.cardExperience:hover {
+    transform: scale(1.01);
 }
 
 /*EDUCATION TITLE*/
