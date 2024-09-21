@@ -8,6 +8,7 @@
     text-decoration: none;
     list-style: none;
 }
+
 body {
     background-color: #D1D5DB;
 }
@@ -339,10 +340,6 @@ footer {
     display: flex;
     gap: 20px;
 }
-
-/*EXPERIENCE TITLE*/
-
-
 
 /*BUTTON*/
 
@@ -739,7 +736,6 @@ a:active {
         padding: 0px 300px;
     }
 }
-
 
 @media (min-width: 1920px) {
     .sectionIconsSkills ul {
