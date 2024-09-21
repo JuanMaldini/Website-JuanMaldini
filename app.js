@@ -20,3 +20,19 @@ document.addEventListener("click", (event) => {
         navBurguer.classList.remove("active");
     }
 });
+
+// Seleccionar todas las tarjetas cardExperience
+const cardExperiences = document.querySelectorAll('.cardExperience');
+
+// Recorrer cada una de las cardExperience
+cardExperiences.forEach(card => {
+    // Comprobar si falta cardExperienceDescription
+    const hasDescription = card.querySelector('.cardExperienceDescription') !== null;
+
+    // Si no está presente, modificar layout
+    if (!hasDescription) {
+        card.classList.add('modified');
+    } else {
+        card.classList.remove('modified'); // Por si lo tiene en otros casos
+    }
+});

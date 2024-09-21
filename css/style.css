@@ -377,63 +377,56 @@ footer {
     padding: 0px 16px;
 }
 
-.sectionExperience article {
-    display: flex;
-    justify-content: center;
-    max-width: 80%;
-}
-
 .cardExperience {
     transition: transform 0.3s ease;
     will-change: transform;
-    
+    width: 90%;
     display: grid;
-    grid-column-gap: 8px;
-    grid-row-gap: 8px;
-    
     background-color: #495955;
     border-radius: 12px;
     box-shadow: 0px 0px 10px #6e6e6e;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
     padding: 8px;
-    width: 100%;
-
-
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 50% 50%;
+    grid-template-rows: 3fr;
+    grid-template-columns: 1fr;
     grid-template-areas:
-    "cardExperienceJob cardExperienceDescription"
-    "cardExperienceJobIcons cardExperienceJobIcons"
-    ;
+    "cardExperienceJob"
+    "cardExperienceDescription"
+    "cardExperienceJobIcons";
+}
+
+/* Estilo cuando cardExperience no tiene las otras clases .js */
+.cardExperience.modified {
+    display: flex;
+    flex-direction: column;
 }
 
 .cardExperienceJob {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: 100%;
-    justify-content: start;
     grid-area: cardExperienceJob;
 }
 
 .cardExperienceDescription {
-    background-color: #F3F4F6;
-    padding: 8px;
+    display: flex;
     border-radius: 12px;
-    text-align: center;
     grid-area: cardExperienceDescription;
+}
+
+.cardExperienceDescription p {
+    display: flex;
+    text-align: start;
 }
 
 .cardExperienceJobIcons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
     gap: 16px;
     grid-area: cardExperienceJobIcons;
-}
-
-
-.cardExperienceDescription p {
-    text-align: left;
 }
 
 .cardExperienceJobIcons img{
@@ -718,6 +711,13 @@ a:active {
     }
     .nav {
         padding: 16px 0px;
+    }
+    .cardExperience {
+        grid-template-rows: 2fr;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-areas:
+        "cardExperienceJob cardExperienceDescription"
+        "cardExperienceJobIcons cardExperienceJobIcons";
     }
 }
 
