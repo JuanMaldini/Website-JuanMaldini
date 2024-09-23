@@ -25,6 +25,7 @@ h1 {
 h2 {
     font-size:74px;
     color: #ffae23;
+    
 }
 
 h3 {
@@ -46,7 +47,7 @@ h6 {
 }
 
 header {
-    background-color: #495955;
+    background-color: hsl(165, 10%, 32%);
 }
 
 /*NAV BAR*/
@@ -74,16 +75,15 @@ header {
 }
 
 .navSpace {
-    background-color: #495955;
     display: flex;
     justify-content: center;
-    color: rgb(233, 233, 233);
+    color: white;
     padding: 8px 0px 8px 0px;
 }
 
 .navRight {
     z-index: 1;
-    background-color: #35413e;
+    background-color: hsl(165, 10%, 25%);
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -107,7 +107,6 @@ header {
     position: fixed;
     transition: opacity 0.3s ease;
     opacity: 100%;
-    background-color: #495955;
     padding: 6px 12px;
     margin: 16px;
     border-radius: 16px;
@@ -153,7 +152,6 @@ header {
 /*ABOUT ME*/
 
 .cardsAboutMe {
-    background-color: #D1D5DB;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -189,10 +187,10 @@ header {
     gap: 16px;
 }
 
-.cardAboutMe01a li {
+.cardAboutMe01a {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    align-items: center;
 }
 
 .cardAboutMe01a img {
@@ -201,7 +199,7 @@ header {
     box-shadow: 0px 0px 10px rgb(110, 110, 110);
 }
 
-.cardAboutMe01b ul {
+.cardAboutMe01b {
     padding: 20px;
     background-color: #495955;
     display: flex;
@@ -239,7 +237,7 @@ header {
     max-width: 400px;
     margin: 0px 8px;
     padding: 16px;
-    gap: 8px;
+    gap: 16px;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
@@ -269,14 +267,12 @@ header {
 }
 
 .cloudPortfolio {
-    background-color: #D1D5DB;
     padding: 20px;
     display: flex;
     justify-content: center;
 }
 
 .sectionIconsSkills {
-    background-color: #D1D5DB;
     padding: 16px;
 }
 
@@ -347,10 +343,9 @@ footer {
 .button {
     transition: transform 0.3s ease;
     will-change: transform;
-    background-color: #495955;
+    background-color: hsl(165, 10%, 32%);
     box-shadow: 0px 0px 10px rgb(110, 110, 110);
     text-decoration: none;
-    color: white;
     padding: 16px 32px;
     border-radius: 12px;
     text-align: center;
@@ -359,15 +354,13 @@ footer {
 .button:hover {
     color: white;
     transform: scale(0.95);
-    background-color: #576965;
-    box-shadow: 0px 0px 10px black;
+    background-color: hsl(165, 10%, 40%);
     cursor: pointer;
 }
 
 /*EXPERIENCE CARD*/
 
 .sectionExperience {
-    background-color: #D1D5DB;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -509,7 +502,6 @@ footer {
 /*PROJECTS*/
 
 .titleProjectsType {
-    background-color: #D1D5DB;
     padding: 16px 15%;
     display: flex;
     flex-direction: row;
@@ -521,7 +513,6 @@ footer {
 }
 
 .projectSection {
-    background-color: #D1D5DB;
     padding: 16px;
 }
 
@@ -581,20 +572,9 @@ footer {
     border-radius: 8px;
 }
 
-/*PRESS SETUP*/
-
-a:hover {
-    color: #d68800;
-}
-
-a:active {
-    color: #a16600;
-}
-
 /*APARTAMENTO RR*/
 
 .rrDescription {
-    background-color: #D1D5DB;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -611,7 +591,7 @@ a:active {
 }
 
 .rrDescription02 {
-    background-color: #f8f8f8;                      /*PROBLEMAS DE HERENCIA COLOR*/
+    background-color: #F3F4F6;
     box-shadow: 0px 0px 10px rgb(110, 110, 110);
     display: flex;
     flex-direction: column;
@@ -622,7 +602,6 @@ a:active {
 }
 
 .rrGallery {
-    background-color: #D1D5DB;
     padding: 0px 150px;
 }
 
@@ -645,7 +624,6 @@ a:active {
 /*SKILLS SECTION*/
 
 .skillsSection {
-    background-color: #D1D5DB;
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
@@ -653,11 +631,10 @@ a:active {
     padding: 0px 16px;
 }
 
-
 .skillCard {
     transition: transform 0.3s ease;
     will-change: transform;
-    background-color: #F3F4F6;    /*ARREGLAR HERENCIA*/
+    background-color: #F3F4F6;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -670,6 +647,16 @@ a:active {
 
 .skillCard:hover {
     transform: scale(1.04);
+}
+
+/*PRESS SETUP*/
+
+a:hover {
+    color: #d68800;
+}
+
+a:active {
+    color: #a16600;
 }
 
 /*OVERRIDE*/
@@ -749,4 +736,34 @@ a:active {
     .projectSection {
         gap: 32px;
     }
+}
+
+/*DARK MODE*/
+
+/* Estilos para modo oscuro detectado por CSS */
+@media (prefers-color-scheme: dark) {
+
+.modo-oscuro body {
+    background-color: hsl(0, 0%, 10%);
+    color: #f0f0f0;
+}
+
+.modo-oscuro .cardAboutMe01, .contactCard input, .projectCard, .rrDescription02, .cardExperience p, .contactCard, .skillCard, .titleCenter, .cardAboutMe02, .promotion, .sectionIconsSkills ul {
+    background-color: hsl(0, 0%, 20%);
+}
+
+.modo-oscuro .button, .button:hover, footer a, .contactCard input {
+    color: white;
+}
+
+.modo-oscuro .projectCardTag li {
+    background-color: hsl(165, 10%, 25%);
+}
+
+
+
+
+
+
+
 }

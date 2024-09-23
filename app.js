@@ -36,3 +36,26 @@ cardExperiences.forEach(card => {
         card.classList.remove('modified'); // Por si lo tiene en otros casos
     }
 });
+
+// Función que retorna true si el sistema está en modo oscuro
+function estaEnModoOscuro() {
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+}
+
+// Función que aplica la clase 'modo-oscuro' al elemento <html>
+function aplicarModoOscuro() {
+    const esModoOscuro = estaEnModoOscuro();
+    console.log('¿Está en modo oscuro?:', esModoOscuro);  // Verifica el estado en la consola
+
+    if (esModoOscuro) {
+        document.documentElement.classList.add('modo-oscuro');  // Aplica la clase al <html>
+    } else {
+        document.documentElement.classList.remove('modo-oscuro');  // Quita la clase del <html>
+    }
+}
+
+// Escuchar cambios en la preferencia de color del sistema
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', aplicarModoOscuro);
+
+// Ejecutar la función al cargar la página
+aplicarModoOscuro();
