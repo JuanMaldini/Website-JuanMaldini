@@ -372,7 +372,6 @@ footer {
 .cardExperience {
     transition: transform 0.3s ease;
     will-change: transform;
-    width: 90%;
     display: grid;
     background-color: #495955;
     border-radius: 12px;
@@ -740,15 +739,10 @@ a:active {
         padding: 0px 300px;
     }
     .sectionExperience {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         align-items: flex-start;
-        padding: 0px 100px;
-    }
-    .cardExperience {
-        max-width: 600px;
+        justify-items: center;
     }
 }
 
