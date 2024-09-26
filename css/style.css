@@ -372,7 +372,6 @@ footer {
 .cardExperience {
     transition: transform 0.3s ease;
     will-change: transform;
-    width: 100%;
     display: grid;
     background-color: #495955;
     border-radius: 12px;
@@ -737,7 +736,7 @@ a:active {
         padding: 16px 20%;
     }
     .skillsSection {
-        padding: 0px 150px;
+        padding: 0px 300px;
     }
     .sectionExperience {
         display: grid;
