@@ -524,63 +524,73 @@ footer {
 }
 
 .projectSection {
-    padding: 16px;
-}
-
-.projectSection {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding: 16px;
     gap: 16px;
     align-items: start;
 }
 
 .projectCard {
     color: #f8f8f8;
-    display: flex;
-    justify-content: center;
-    text-align: center;
     transition: transform 0.3s ease;
     will-change: transform;
-    padding: 12px;
-    width: 350px;
     background-color: #495955;
     border-radius: 16px;
     box-shadow: 5px 5px 5px rgb(110, 110, 110);
+    
+    padding: 12px;
+    gap: 24px;
+    width: 100%;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: left;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    grid-template-areas:
+    "projectCardVideo"
+    "projectCardData"
+    "projectCardTag"
+    ;
 }
 
-.projectCard video {
-    height: 160px;
+.projectCardVideo{
+    grid-area: projectCardVideo;
+    height: 140px;
+    align-items: left;
+}
+
+.projectCardData{
+    grid-area: projectCardData;
+    justify-content: left;
+    justify-items: left;
 }
 
 .projectCard img {
-    width: 300px;
-}
-
-.projectCard ul {
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
-    gap: 16px;
+    max-width: 300px;
+    background-color: #FBBF24;
 }
 
 .projectCard:hover {
     transform: scale(1.01);
 }
 
-.projectCard img{
-    background-color: #FBBF24;
-}
-
-.projectCardTag li {
+.projectCardTag  {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     background-color: #374151;
     color: white;
     padding: 8px;
     border-radius: 8px;
+    gap: 18px;
+    grid-area: projectCardTag;
 }
 
 /*APARTAMENTO RR*/
@@ -672,6 +682,18 @@ a:active {
 
 /*OVERRIDE*/
 
+@media(min-width: 375px) {
+    .projectCard video {
+        height: 175px;
+    }
+}
+
+@media(min-width: 428px) {
+    .projectCard video {
+        height: 190px;
+    }
+}
+
 @media (min-width: 768px) {
     .cardExperience {
         flex-wrap: nowrap;
@@ -720,6 +742,15 @@ a:active {
         "cardExperienceJob cardExperienceDescription"
         "cardExperienceJobIcons cardExperienceJobIcons";
     }
+    .projectCard{
+        justify-content: space-between;
+        grid-template-columns: 2fr;
+        grid-template-rows: 2fr;
+        grid-template-areas:
+        "projectCardVideo projectCardData"
+        "projectCardVideo projectCardTag"
+        ;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -728,6 +759,9 @@ a:active {
     }
     .rrDescription02 {
         max-width: 700px;
+    }
+    .projectCardTag{
+        gap: 32px;
     }
 }
 
@@ -738,7 +772,7 @@ a:active {
     .skillsSection {
         padding: 0px 300px;
     }
-    .sectionExperience {
+    .sectionExperience, .projectSection {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: flex-start;
