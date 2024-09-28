@@ -185,7 +185,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 16px;
+    gap: 24px;
 }
 
 .cardAboutMe01a img {
@@ -221,6 +221,23 @@ header {
 
 .cardAboutMe01 div {
     text-align: center;
+}
+
+.cardAboutMe01c img {
+    width: 50px;
+    box-shadow: none;
+}
+
+.cardAboutMe01d img {
+    width: 25px;
+    box-shadow: none;
+}
+
+.cardAboutMe01d {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
 }
 
 .cardAboutMe02 {
@@ -809,6 +826,10 @@ a:active {
 
 .modo-oscuro .button, .button:hover {
     box-shadow: 0px 0px 0px;
+}
+
+.modo-oscuro .cardAboutMe01d img {
+
 }
 
 }
